@@ -1,0 +1,73 @@
+<h1>Movie Theatre Seat Booking System</h1>
+
+<div class="movie-container">
+<label>Select Movie:</label>
+
+
+<select id="movie">
+<option value="500-1800">Dhurandar 2: The Revenge (₹500 - ₹1800)</option>
+<option value="200-850">Avengers (₹200 - ₹850)</option>
+<option value="200-700">Spider-Man (₹200 - ₹700)</option>
+<option value="180-700">Batman (₹180 - ₹700)</option>
+</select>
+</div>
+<div class="date-container">
+<label>Select Date:</label>
+<input type="date" id="date">
+</div>
+<div class="time-container">
+<label>Select Show Time:</label>
+
+<select id="showTime">
+<option value="morning">9:00 AM – 12:00 PM</option>
+<option value="noon">12:00 PM – 3:00 PM</option>
+<option value="afternoon">3:00 PM – 6:00 PM</option>
+<option value="evening">6:00 PM – 9:00 PM</option>
+<option value="night">9:00 PM – 12:00 AM</option>
+</select>
+
+</div>
+<ul class="legend">
+  <li>
+    <div class="seat"></div>
+    <small>Available</small>
+  </li>
+
+  <li>
+    <div class="seat selected"></div>
+    <small>Selected</small>
+  </li>
+
+  <li>
+    <div class="seat occupied"></div>
+    <small>Occupied</small>
+  </li>
+</ul>
+
+
+<div class="screen-container">
+  <div class="screen"></div>
+  <span class="screen-text">SCREEN</span>
+</div>
+
+<div class="container">
+
+<div class="row regular"><span class="label"></span></div>
+<div class="row regular"><span class="label"></span></div>
+
+<div class="row prime"><span class="label"></span></div>
+<div class="row prime"><span class="label"></span></div>
+
+<div class="row primeplus"><span class="label"></span></div>
+<div class="row primeplus"><span class="label"></span></div>
+
+<div class="row recliner"><span class="label"></span></div>
+
+</div>
+
+
+<p class="text">
+Seats Selected: <span id="count">0</span><br>
+ 
+Total Price: ₹<span id="total">0</span>
+</p>
